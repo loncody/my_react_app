@@ -1,0 +1,45 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas: "header header" "nav content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #427AA1;
+}
+
+header img {
+  height: 100%;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #fff;
+}
+
+.nav div {
+  padding: 7px 20px;
+}
+
+.nav div:hover {
+  background-color: rgb(87, 93, 182);
+  cursor: pointer;
+  color: white;
+}
+
+.content {
+  grid-area: content;
+  background-color: rgb(163, 219, 236);
+  padding: 20px;
+}
